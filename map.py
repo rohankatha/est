@@ -6,7 +6,7 @@ import streamlit as st
 from streamlit_folium import st_folium
 import folium
 import os
-from geopy.geocoders import Nominatim
+#from geopy.geocoders import Nominatim
 import pandas as pd 
 import plotly.express as px
 import plotly.graph_objects as go

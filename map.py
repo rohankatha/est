@@ -4,10 +4,11 @@ import streamlit as st
 from streamlit_folium import st_folium
 import folium
 import os
-from geopy.geocoders import Nominatim
-import pandas as pd 
+
 import plotly.express as px
 import plotly.graph_objects as go
+from geopy.geocoders import Nominatim
+import pandas as pd 
 geolocator = Nominatim(user_agent="geoapiExercises")
 path = os.path.dirname(__file__)
 def pie_chart(threshold,year,data_dict):

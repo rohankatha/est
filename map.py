@@ -1,7 +1,7 @@
 # app.py
 
 import streamlit as st
-from streamlit_folium import st_folium
+from streamlit_folium import folium_static
 import folium
 import os
 import matplotlib
@@ -134,7 +134,7 @@ def main():
     # Folium Map
     m = folium.Map(location=[0,0], zoom_start=5)
     m.add_child(folium.LatLngPopup())
-    map = st_folium(m, height=350, width=700)
+    map = folium_static(m, height=350, width=700)
     data = None
     if map.get("last_clicked"):
       data = map["last_clicked"]["lat"], map["last_clicked"]["lng"]

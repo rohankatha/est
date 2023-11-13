@@ -1,4 +1,7 @@
 # Example requirements.txt for streamlit-folium
+folium
+geopy
+matplotlib
 streamlit-folium
 plotly
 

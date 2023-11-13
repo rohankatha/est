@@ -4,7 +4,7 @@ import streamlit as st
 from streamlit_folium import st_folium
 import folium
 import os
-
+import matplotlib
 import plotly.express as px
 import plotly.graph_objects as go
 from geopy.geocoders import Nominatim

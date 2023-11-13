@@ -1,4 +1,6 @@
 # app.py
+import subprocess
+subprocess.run(['pip', 'install', 'geopy'])
 
 import streamlit as st
 from streamlit_folium import st_folium

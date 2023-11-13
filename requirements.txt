@@ -1,0 +1,6 @@
+# Example requirements.txt for streamlit-folium
+
+streamlit
+folium
+streamlit-folium
+plotly

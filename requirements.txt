@@ -1,8 +1,8 @@
 # Example requirements.txt for streamlit-folium
-matplotlib==3.4.1
+matplotlib==3.5.2
 plotly==4.14.3
-numpy==1.20.2
 streamlit==0.81.0
 folium==0.1.5
 geopy==2.4.0
+streamlit_folium
 

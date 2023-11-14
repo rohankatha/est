@@ -133,7 +133,7 @@ def main():
     # Folium Map
     m = folium.Map(location=[0,0], zoom_start=5)
     m.add_child(folium.LatLngPopup())
-    m1 =  folium.Map(location=[0,0], zoom_start=5,tiles = 'Stamen Terrain')
+    #m1 =  folium.Map(location=[0,0], zoom_start=5,tiles = 'Stamen Terrain')
     
     map = st_folium(m, height=350, width=700)
     data = None

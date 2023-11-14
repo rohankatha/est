@@ -103,15 +103,16 @@ sheet_name = 'Country tree cover loss'
 subnational_sheet_name = 'Subnational 1 tree cover loss'
 pie_chart_data = extract_bar_data(file_path, subnational_sheet_name)
 
-if option != None:
-    txt = st.text_area(
-    "Text to analyze",
-    "It was the best of times, it was the worst of times, it was the age of "
-    "wisdom, it was the age of foolishness, it was the epoch of belief, it "
-    "was the epoch of incredulity, it was the season of Light, it was the "
-    "season of Darkness, it was the spring of hope, it was the winter of "
-    "despair, (...)",
+if option == "Ghana":
+    txt = st.write(
+    "- *The government of Ghana lifted a ban on the export of unprocessed timber logs in 2002.* This led to a surge in logging, as timber companies rushed to clear forests and export the logs before the ban was reinstated. - *The government also reduced funding for forestry programs in 2002.* This made it more difficult for the Forestry Commission to enforce forest laws and protect forests from deforestation.- *In addition, the government granted concessions to mining companies in forested areas.* This led to the clearing of forests for mining operations.",
     )
+if option == "Cameroon":
+    txt = st.write("The increase in tree cover loss in 2002 when compared to 2001 and in the years 2010 and 2015 is likely due to a combination of factors, including:Increased demand for agricultural products: Cameroon is a major exporter of agricultural products, such as cocoa, palm oil, and rubber. As global demand for these products has increased, so has the need to clear forests for agricultural land.Illegal logging: Cameroon is also a major exporter of timber. However, a significant portion of this logging is illegal. Illegal logging operations often clear large areas of forest without any regard for sustainable forest management practices.Weak governance: Cameroon's forest laws are relatively strong, but they are not always effectively enforced. This creates an environment where illegal logging and other forms of forest degradation can thrive.The main reason for the decrease in tree cover loss after 2017 is likely a combination of factors, including:Increased government efforts to combat deforestation: The Cameroonian government has taken a number of steps in recent years to reduce deforestation, including increasing enforcement of forest laws and investing in sustainable forest management practices.Increased public awareness of the importance of forests: Cameroonian civil society organizations have also played an important role in raising public awareness of the importance of forests and the need to protect them.Decline in global demand for some agricultural products: Global demand for some agricultural products, such as cocoa and palm oil, has declined in recent years. This has reduced the pressure to clear forests for agricultural land.")
+if option == "Congo republic":
+    txt = st.write("The Republic of Congo presents a complex scenario where conservation efforts intersect with challenges such as corruption, selective logging practices, and the potential impact of climate change. While strides have been made in sustainable forest management, the delicate balance between economic development and environmental preservation remains a significant concern. Addressing corruption, improving transparency, and considering the long-term consequences of logging and agriculture are essential for the Republic of Congo to sustainably manage its rich rainforest resources.")
+if option == "Nigeria":
+    txt = st.write("Nigeria had seen a sudden increase of tree cover loss, in 2016-17 because of infrastructure projects being established and unrest due to attacks by private militant groups. A railway line has been established from Lagos to Kanos, which required clearing of forests. The Niger delta avengers had attacked the oil pipelines (Niger Delta), which caused a forest damaging oil spill.")
 if option != None and option2 != None:
  selected_data = pie_chart_data.get(option2)
  df = pd.DataFrame(selected_data)
